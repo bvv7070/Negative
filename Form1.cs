@@ -20,7 +20,7 @@ namespace WindowsFormsApp1
 
         private void Generate()
         {
-            string name = "C:\\Users\\lolbv\\source\\repos\\WindowsFormsApp1\\WindowsFormsApp1\\image.png";
+            string name = "";//target image directory
 
             Bitmap image = new Bitmap(Image.FromFile(name));//load image
             Bitmap btm = new Bitmap(image.Width, image.Height);//set size of new image
@@ -34,7 +34,7 @@ namespace WindowsFormsApp1
             }
             pictureBox1.Image = btm;
 
-            btm.Save("C:\\Users\\lolbv\\source\\repos\\WindowsFormsApp1\\WindowsFormsApp1\\negative.png");
+            btm.Save("");//directory where edited file is saved
         }
     }
 }
